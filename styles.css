@@ -75,7 +75,7 @@ nav ul li a:hover {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
-                url('https://unsplash.com/photos/landscape-photography-of-factory-at-daytime-XLFu0PM5Qsg?utm_content=creditShareLink&utm_medium=referral&utm_source=unsplash');
+                url('hero-bg.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
