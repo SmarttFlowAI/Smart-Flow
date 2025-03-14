@@ -345,76 +345,119 @@ footer {
 # Pricing Section
 --------------------------------------------------------------*/
 .pricing {
-  padding: 60px 0;
+  padding: 80px 0;
   background: #f8f9fa;
 }
 
-.pricing .box {
-  padding: 40px;
-  margin-bottom: 30px;
-  background: #fff;
+.section-title {
   text-align: center;
-  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
-  border-radius: 5px;
-  position: relative;
-  overflow: hidden;
+  margin-bottom: 50px;
 }
 
-.pricing h3 {
-  font-weight: 400;
-  margin: -40px -40px 0;
-  padding: 40px 15px;
-  font-size: 22px;
-  background: #0d6efd;
-  color: #fff;
-}
-
-.pricing h4 {
-  font-size: 36px;
-  color: #0d6efd;
+.section-title h2 {
+  font-size: 32px;
   font-weight: 600;
   margin-bottom: 20px;
+  color: #2c4964;
 }
 
-.pricing ul {
+.section-title p {
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.price-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
   padding: 0;
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.price-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.price-header {
+  background: #004d99;
+  color: white;
+  padding: 25px;
+  border-radius: 15px 15px 0 0;
+  text-align: center;
+}
+
+.price-header h3 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.duration {
+  font-size: 18px;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+.price-features {
+  padding: 30px;
+}
+
+.price-features ul {
   list-style: none;
-  color: #444444;
-  text-align: left;
-  line-height: 20px;
+  padding: 0;
+  margin: 0;
 }
 
-.pricing ul li {
-  padding: 10px 0 10px 30px;
+.price-features ul li {
+  padding: 12px 0;
+  color: #555;
   position: relative;
+  padding-left: 30px;
 }
 
-.pricing ul li:before {
+.price-features ul li:before {
   content: "✓";
+  color: #004d99;
   position: absolute;
   left: 0;
-  top: 10px;
-  color: #0d6efd;
+  font-weight: bold;
 }
 
-.pricing .btn-wrap {
-  margin: 20px -40px -40px;
-  padding: 20px 15px;
-  background: #f8f9fa;
+.price-action {
+  padding: 20px 30px 40px;
+  text-align: center;
 }
 
-.pricing .btn-buy {
+.btn-pricing {
   display: inline-block;
-  padding: 10px 35px;
-  border-radius: 4px;
-  color: #fff;
-  background: #0d6efd;
-  font-size: 15px;
-  font-weight: 600;
+  padding: 12px 40px;
+  background: #004d99;
+  color: white;
   text-decoration: none;
-  transition: 0.3s;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
-.pricing .btn-buy:hover {
-  background: #0b5ed7;
+.btn-pricing:hover {
+  background: #003366;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.featured {
+  border: 2px solid #004d99;
+}
+
+.featured .price-header {
+  background: #003366;
+}
+
+@media (max-width: 768px) {
+  .price-card {
+    margin: 0 20px 30px;
+  }
 }
